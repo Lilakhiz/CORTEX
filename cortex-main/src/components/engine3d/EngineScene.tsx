@@ -628,7 +628,7 @@ export function EngineScene({
       />
 
       {/* Timeline driver — drives all 3D animation from scrollProgress */}
-      <Environment preset="studio" />
+      <Environment files="https://cdn.jsdelivr.net/gh/pmndrs/drei-assets@456060a26bbeb8fdf79326f224b6d99b8bcce736/hdri/studio_small_03_1k.hdr" />
 
       {/* MOVE TIMELINE DRIVER HERE */}
       <Suspense fallback={null}>
@@ -699,7 +699,7 @@ export function EngineScene({
         penumbra={0.8}
       />
 
-      <Environment preset="studio" />
+      <Environment files="https://cdn.jsdelivr.net/gh/pmndrs/drei-assets@456060a26bbeb8fdf79326f224b6d99b8bcce736/hdri/studio_small_03_1k.hdr" />
 
       <Suspense fallback={null}>
         <EngineModel engineGroupRef={engineGroupRef} engineIdleRef={engineIdleRef} />
