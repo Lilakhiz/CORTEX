@@ -1,0 +1,20 @@
+version 2:
+future
+
+1. news page where u can subscribe to news and events
+2. notifications panel that notifies u of the latest news u missed.
+3. google login
+4. voice search
+5. graph gallery where u can save important graphs.
+6. better security/ privacy features
+7. search history
+8. apache 2.0 lisence
+9. graph using pdf's. 
+10. share graph feature
+
+version 3:
+bro how far u thinking
+1. much better cybersecurity features
+2. introduction to paid models
+3. convert to llm
+

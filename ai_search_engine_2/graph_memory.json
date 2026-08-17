@@ -1,0 +1,596 @@
+{
+  "nodes": [
+    {
+      "id": "product:glowear-heel-protector",
+      "name": "Glowear Heel Protector",
+      "type": "Other"
+    },
+    {
+      "id": "medical-condition:plantar-fasciitis",
+      "name": "Plantar Fasciitis",
+      "type": "Other"
+    },
+    {
+      "id": "company:amazon",
+      "name": "Amazon",
+      "type": "Company"
+    },
+    {
+      "id": "product:dawn powerwash",
+      "name": "Dawn Powerwash",
+      "type": "Other"
+    },
+    {
+      "id": "company:baggu",
+      "name": "Baggu",
+      "type": "Company"
+    },
+    {
+      "id": "company:aws",
+      "name": "AWS",
+      "type": "Company"
+    },
+    {
+      "id": "website:reddit",
+      "name": "Reddit",
+      "type": "Website"
+    },
+    {
+      "id": "company:frido-orthotics",
+      "name": "Frido Orthotics",
+      "type": "Company"
+    },
+    {
+      "id": "company:the-health-store",
+      "name": "The Health Store",
+      "type": "Company"
+    },
+    {
+      "id": "company:frido",
+      "name": "Frido Orthotics",
+      "type": "Company"
+    },
+    {
+      "id": "country:india",
+      "name": "India",
+      "type": "Country"
+    },
+    {
+      "id": "person:frido",
+      "name": "Frido",
+      "type": "Person"
+    },
+    {
+      "id": "company:frido orthotics",
+      "name": "Frido Orthotics",
+      "type": "Company"
+    },
+    {
+      "id": "website:amazon.in",
+      "name": "Amazon.in",
+      "type": "Website"
+    },
+    {
+      "id": "website:flipkart.com",
+      "name": "Flipkart.com",
+      "type": "Website"
+    },
+    {
+      "id": "product:frido orthotics heel protector",
+      "name": "Frido Orthotics Heel Protector",
+      "type": "Other"
+    },
+    {
+      "id": "product:frido-heel-protector",
+      "name": "Frido Heel Protector",
+      "type": "Other"
+    },
+    {
+      "id": "product:trending-heel-protector-2025",
+      "name": "Trending Heel Protector 2025",
+      "type": "Other"
+    },
+    {
+      "id": "product:frido heel protector",
+      "name": "Frido Heel Protector",
+      "type": "Other"
+    },
+    {
+      "id": "repository:r/investing",
+      "name": "r/Investing",
+      "type": "Repository"
+    },
+    {
+      "id": "subreddit:r/redditstock",
+      "name": "r/Redditstock",
+      "type": "Other"
+    },
+    {
+      "id": "community:r/ukinvesting",
+      "name": "r/ukinvesting",
+      "type": "Other"
+    },
+    {
+      "id": "country:united kingdom",
+      "name": "United Kingdom",
+      "type": "Country"
+    },
+    {
+      "id": "repository:r/redditstock",
+      "name": "r/Redditstock",
+      "type": "Repository"
+    },
+    {
+      "id": "website:r/investing",
+      "name": "R/Investing",
+      "type": "Website"
+    },
+    {
+      "id": "other:july",
+      "name": "July",
+      "type": "Other"
+    },
+    {
+      "id": "company:kiplinger",
+      "name": "Kiplinger",
+      "type": "Company"
+    },
+    {
+      "id": "company:morningstar",
+      "name": "Morningstar",
+      "type": "Company"
+    },
+    {
+      "id": "person:melanie-fiona",
+      "name": "Melanie Fiona",
+      "type": "Person"
+    },
+    {
+      "id": "song:give-it-to-me-right",
+      "name": "Give It To Me Right",
+      "type": "Other"
+    },
+    {
+      "id": "artist:fifth harmony",
+      "name": "Fifth Harmony",
+      "type": "Other"
+    },
+    {
+      "id": "song:worth it",
+      "name": "Worth It",
+      "type": "Other"
+    },
+    {
+      "id": "artist:kid ink",
+      "name": "Kid Ink",
+      "type": "Person"
+    },
+    {
+      "id": "company:nvidia",
+      "name": "Nvidia",
+      "type": "Company"
+    },
+    {
+      "id": "stock:nvda",
+      "name": "Nvda",
+      "type": "Other"
+    },
+    {
+      "id": "exchange:NASDAQ",
+      "name": "Nasdaq",
+      "type": "Organization"
+    },
+    {
+      "id": "country:usa",
+      "name": "U.S.",
+      "type": "Country"
+    },
+    {
+      "id": "ticker:nvda",
+      "name": "Nvda",
+      "type": "Other"
+    },
+    {
+      "id": "website:yesnopicker",
+      "name": "Yesnopicker",
+      "type": "Website"
+    },
+    {
+      "id": "other:taman-shud",
+      "name": "Taman Shud",
+      "type": "Other"
+    },
+    {
+      "id": "repository:r/investingforbeginners",
+      "name": "r/Investingforbeginners",
+      "type": "Repository"
+    },
+    {
+      "id": "other:taman shud",
+      "name": "Taman Shud",
+      "type": "Other"
+    },
+    {
+      "id": "company:tesla",
+      "name": "Tesla",
+      "type": "Company"
+    },
+    {
+      "id": "stock:tsla",
+      "name": "Tsla",
+      "type": "Other"
+    },
+    {
+      "id": "company:kelley blue book",
+      "name": "Kelley Blue Book",
+      "type": "Company"
+    },
+    {
+      "id": "company:kelly-blue-book",
+      "name": "Kelley Blue Book",
+      "type": "Company"
+    },
+    {
+      "id": "company:kelley-blue-book",
+      "name": "Kelley Blue Book",
+      "type": "Company"
+    },
+    {
+      "id": "company:tsla",
+      "name": "TSLA",
+      "type": "Other"
+    },
+    {
+      "id": "person:elon",
+      "name": "Elon",
+      "type": "Person"
+    },
+    {
+      "id": "university:elon",
+      "name": "Elon University",
+      "type": "Organization"
+    },
+    {
+      "id": "website:wikipedia",
+      "name": "Wikipedia",
+      "type": "Website"
+    },
+    {
+      "id": "country:united_states",
+      "name": "America",
+      "type": "Country"
+    },
+    {
+      "id": "person:elonmusk",
+      "name": "Elon Musk",
+      "type": "Person"
+    },
+    {
+      "id": "organization:elon_university",
+      "name": "Elon University",
+      "type": "Organization"
+    },
+    {
+      "id": "country:america",
+      "name": "America",
+      "type": "Country"
+    },
+    {
+      "id": "website:techcrunch",
+      "name": "Techcrunch",
+      "type": "Website"
+    },
+    {
+      "id": "event:techcrunch_mobility",
+      "name": "Techcrunch Mobility",
+      "type": "Event"
+    },
+    {
+      "id": "concept:robotaxis",
+      "name": "Robotaxis",
+      "type": "Concept"
+    },
+    {
+      "id": "event:techcrunch-mobility",
+      "name": "Techcrunch Mobility",
+      "type": "Event"
+    }
+  ],
+  "edges": [
+    {
+      "source": "product:glowear-heel-protector",
+      "relation": "for_relief_of",
+      "target": "medical-condition:plantar-fasciitis"
+    },
+    {
+      "source": "company:amazon",
+      "relation": "features",
+      "target": "product:dawn powerwash"
+    },
+    {
+      "source": "company:amazon",
+      "relation": "features",
+      "target": "company:baggu"
+    },
+    {
+      "source": "company:aws",
+      "relation": "is_part_of",
+      "target": "company:amazon"
+    },
+    {
+      "source": "website:reddit",
+      "relation": "hosts",
+      "target": "company:aws"
+    },
+    {
+      "source": "product:glowear-heel-protector",
+      "relation": "provides_relief_for",
+      "target": "medical-condition:plantar-fasciitis"
+    },
+    {
+      "source": "company:amazon",
+      "relation": "owns",
+      "target": "company:aws"
+    },
+    {
+      "source": "company:aws",
+      "relation": "mentioned_on",
+      "target": "website:reddit"
+    },
+    {
+      "source": "company:amazon",
+      "relation": "mentioned_on",
+      "target": "website:reddit"
+    },
+    {
+      "source": "company:frido-orthotics",
+      "relation": "sold_at",
+      "target": "company:the-health-store"
+    },
+    {
+      "source": "company:frido",
+      "relation": "operates_in",
+      "target": "country:india"
+    },
+    {
+      "source": "company:frido orthotics",
+      "relation": "sold_on",
+      "target": "website:amazon.in"
+    },
+    {
+      "source": "website:amazon.in",
+      "relation": "operates_in",
+      "target": "country:india"
+    },
+    {
+      "source": "company:amazon",
+      "relation": "owns",
+      "target": "website:amazon.in"
+    },
+    {
+      "source": "company:frido_orthotics",
+      "relation": "sold_on",
+      "target": "website:amazon.in"
+    },
+    {
+      "source": "website:amazon.in",
+      "relation": "owned_by",
+      "target": "company:amazon"
+    },
+    {
+      "source": "company:frido orthotics",
+      "relation": "sold_on",
+      "target": "website:flipkart.com"
+    },
+    {
+      "source": "website:flipkart.com",
+      "relation": "operates_in",
+      "target": "country:india"
+    },
+    {
+      "source": "product:frido orthotics heel protector",
+      "relation": "available_on",
+      "target": "website:flipkart.com"
+    },
+    {
+      "source": "product:frido orthotics heel protector",
+      "relation": "manufactured_by",
+      "target": "company:frido orthotics"
+    },
+    {
+      "source": "company:frido",
+      "relation": "mentioned_on",
+      "target": "website:reddit"
+    },
+    {
+      "source": "company:frido",
+      "relation": "owns",
+      "target": "website:reddit"
+    },
+    {
+      "source": "website:reddit",
+      "relation": "hosts",
+      "target": "repository:r/investing"
+    },
+    {
+      "source": "website:reddit",
+      "relation": "hosts",
+      "target": "subreddit:r/redditstock"
+    },
+    {
+      "source": "community:r/ukinvesting",
+      "relation": "located_in",
+      "target": "country:united kingdom"
+    },
+    {
+      "source": "community:r/ukinvesting",
+      "relation": "hosted_on",
+      "target": "website:reddit"
+    },
+    {
+      "source": "website:reddit",
+      "relation": "hosts",
+      "target": "repository:r/redditstock"
+    },
+    {
+      "source": "website:reddit",
+      "relation": "hosts",
+      "target": "website:r/investing"
+    },
+    {
+      "source": "website:reddit",
+      "relation": "hosts",
+      "target": "community:r/ukinvesting"
+    },
+    {
+      "source": "community:r/ukinvesting",
+      "relation": "based_in",
+      "target": "country:united kingdom"
+    },
+    {
+      "source": "person:melanie-fiona",
+      "relation": "performed",
+      "target": "song:give-it-to-me-right"
+    },
+    {
+      "source": "artist:fifth harmony",
+      "relation": "featured",
+      "target": "artist:kid ink"
+    },
+    {
+      "source": "artist:fifth harmony",
+      "relation": "performed",
+      "target": "song:worth it"
+    },
+    {
+      "source": "artist:kid ink",
+      "relation": "featured_on",
+      "target": "song:worth it"
+    },
+    {
+      "source": "song:worth it",
+      "relation": "performed_by",
+      "target": "artist:fifth harmony"
+    },
+    {
+      "source": "song:worth it",
+      "relation": "features",
+      "target": "artist:kid ink"
+    },
+    {
+      "source": "company:nvidia",
+      "relation": "has_stock",
+      "target": "stock:nvda"
+    },
+    {
+      "source": "company:nvidia",
+      "relation": "listed_on",
+      "target": "exchange:NASDAQ"
+    },
+    {
+      "source": "exchange:NASDAQ",
+      "relation": "located_in",
+      "target": "country:usa"
+    },
+    {
+      "source": "company:nvidia",
+      "relation": "based_in",
+      "target": "country:usa"
+    },
+    {
+      "source": "company:nvidia",
+      "relation": "issued",
+      "target": "stock:nvda"
+    },
+    {
+      "source": "company:nvidia",
+      "relation": "has_ticker",
+      "target": "ticker:nvda"
+    },
+    {
+      "source": "stock:nvda",
+      "relation": "listed_on",
+      "target": "exchange:NASDAQ"
+    },
+    {
+      "source": "company:nvidia",
+      "relation": "traded_as",
+      "target": "stock:nvda"
+    },
+    {
+      "source": "website:reddit",
+      "relation": "hosts",
+      "target": "repository:r/investingforbeginners"
+    },
+    {
+      "source": "company:tesla",
+      "relation": "issued",
+      "target": "stock:tsla"
+    },
+    {
+      "source": "company:kelley blue book",
+      "relation": "reviewed",
+      "target": "company:tesla"
+    },
+    {
+      "source": "company:tesla",
+      "relation": "represented_by",
+      "target": "stock:tsla"
+    },
+    {
+      "source": "company:kelly-blue-book",
+      "relation": "reviewed",
+      "target": "company:tesla"
+    },
+    {
+      "source": "company:kelley-blue-book",
+      "relation": "reviewed",
+      "target": "company:tesla"
+    },
+    {
+      "source": "company:tsla",
+      "relation": "is_ticker_for",
+      "target": "company:tesla"
+    },
+    {
+      "source": "university:elon",
+      "relation": "has_page_on",
+      "target": "website:wikipedia"
+    },
+    {
+      "source": "university:elon",
+      "relation": "located_in",
+      "target": "country:united_states"
+    },
+    {
+      "source": "organization:elon_university",
+      "relation": "listed_on",
+      "target": "website:wikipedia"
+    },
+    {
+      "source": "university:elon",
+      "relation": "located_in",
+      "target": "country:america"
+    },
+    {
+      "source": "event:techcrunch_mobility",
+      "relation": "focused_on",
+      "target": "concept:robotaxis"
+    },
+    {
+      "source": "event:techcrunch_mobility",
+      "relation": "organized_by",
+      "target": "website:techcrunch"
+    },
+    {
+      "source": "event:techcrunch-mobility",
+      "relation": "focused_on",
+      "target": "concept:robotaxis"
+    },
+    {
+      "source": "event:techcrunch-mobility",
+      "relation": "hosted_by",
+      "target": "website:techcrunch"
+    }
+  ]
+}

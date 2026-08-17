@@ -1,0 +1,6 @@
+{
+  "name": "Cortex Explore",
+  "description": "Interactive knowledge graph and AI discovery engine for complex concept networking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

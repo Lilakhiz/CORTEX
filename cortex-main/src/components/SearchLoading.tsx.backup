@@ -1,0 +1,188 @@
+import { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
+import { cn } from '@/lib/utils';
+
+interface SearchLoadingProps {
+  className?: string;
+}
+
+export function SearchLoading({ className }: SearchLoadingProps) {
+  const [rotation, setRotation] = useState(0);
+  const [showCortex, setShowCortex] = useState(false);
+  const [cortexY, setCortexY] = useState(-20);
+  const [cortexOpacity, setCortexOpacity] = useState(0);
+
+  useEffect(() => {
+    let mounted = true;
+    let intervalId: number | null = null;
+
+    const startAnimationCycle = () => {
+      if (!mounted) return;
+      setRotation(0);
+      if (!mounted) return;
+      setShowCortex(false);
+
+      intervalId = setInterval(() => {
+        if (!mounted) return;
+        setRotation(prev => (prev + 1) % 360);
+      }, 16); // ~60fps for smooth rotation
+
+      setTimeout(() => {
+        if (!mounted) return;
+        clearInterval(intervalId);
+        intervalId = null;
+
+        if (!mounted) return;
+        setShowCortex(true);
+        if (!mounted) return;
+        setCortexY(-20);
+        if (!mounted) return;
+        setCortexOpacity(0);
+
+        // Stumble in animation sequence
+        setTimeout(() => {
+          if (!mounted) return;
+          setCortexY(-10);
+          if (!mounted) return;
+          setCortexOpacity(0.2);
+        }, 100);
+        setTimeout(() => {
+          if (!mounted) return;
+          setCortexY(5);
+          if (!mounted) return;
+          setCortexOpacity(0.4);
+        }, 200);
+        setTimeout(() => {
+          if (!mounted) return;
+          setCortexY(-5);
+          if (!mounted) return;
+          setCortexOpacity(0.6);
+        }, 300);
+        setTimeout(() => {
+          if (!mounted) return;
+          setCortexY(2);
+          if (!mounted) return;
+          setCortexOpacity(0.8);
+        }, 400);
+        setTimeout(() => {
+          if (!mounted) return;
+          setCortexY(-2);
+          if (!mounted) return;
+          setCortexOpacity(0.9);
+        }, 500);
+        setTimeout(() => {
+          if (!mounted) return;
+          setCortexY(1);
+          if (!mounted) return;
+          setCortexOpacity(0.95);
+        }, 600);
+        setTimeout(() => {
+          if (!mounted) return;
+          setCortexY(0);
+          if (!mounted) return;
+          setCortexOpacity(1);
+        }, 700);
+
+        // Phase 3: Hold CORTEX for 0.5 seconds (70% to 80% of cycle)
+        setTimeout(() => {
+          if (!mounted) return;
+          // Phase 4: Animate CORTEX out and back to C (80% to 100% of cycle)
+          setCortexY(-10);
+          if (!mounted) return;
+          setCortexOpacity(0.9);
+
+          setTimeout(() => {
+            if (!mounted) return;
+            setCortexY(5);
+            if (!mounted) return;
+            setCortexOpacity(0.7);
+          }, 100);
+          setTimeout(() => {
+            if (!mounted) return;
+            setCortexY(-5);
+            if (!mounted) return;
+            setCortexOpacity(0.5);
+          }, 200);
+          setTimeout(() => {
+            if (!mounted) return;
+            setCortexY(2);
+            if (!mounted) return;
+            setCortexOpacity(0.3);
+          }, 300);
+          setTimeout(() => {
+            if (!mounted) return;
+            setCortexY(-2);
+            if (!mounted) return;
+            setCortexOpacity(0.1);
+          }, 400);
+          setTimeout(() => {
+            if (!mounted) return;
+            setCortexY(0);
+            if (!mounted) return;
+            setCortexOpacity(0);
+          }, 500);
+
+          // Phase 5: Back to rotating C - restart cycle
+          setTimeout(() => {
+            if (!mounted) return;
+            startAnimationCycle();
+          }, 100);
+        }, 500); // Hold CORTEX for 0.5 seconds
+      }, 2000); // Rotate for 2 seconds (50% of 4-second cycle)
+    };
+
+    startAnimationCycle();
+
+    // Cleanup on unmount
+    return () => {
+      mounted = false;
+      if (intervalId !== null) {
+        clearInterval(intervalId);
+        intervalId = null;
+      }
+    };
+  }, []); // Empty deps because we don't use any props or state
+
+  return (
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      className={cn('flex flex-col items-center justify-center gap-4 py-8', className)}
+    >
+      <div className="relative w-12 h-12">
+        {/* Rotating C - always visible */}
+        <motion.div
+          style={{ rotate: rotation }}
+          className="absolute inset-0 flex items-center justify-center"
+        >
+          <span className="text-white text-2xl font-bold tracking-tight">
+            C
+          </span>
+        </motion.div>
+
+        {/* CORTEX text - appears during transition */}
+        {showCortex && (
+          <motion.div
+            style={{
+              opacity: cortexOpacity,
+              transform: `translateY(${cortexY}px)`
+            }}
+            className="absolute inset-0 flex items-center justify-center"
+          >
+            <span className="text-white text-xl font-bold letter-spacing-wider">
+              CORTEX
+            </span>
+          </motion.div>
+        )}
+      </div>
+
+      {/* Optional: Add subtle pulsing effect to indicate loading */}
+      <div className="animate-pulse inline-flex items-center space-x-2 text-sm text-white/60">
+        <div className="h-1.5 w-1.5 bg-white/40 rounded-full animate-pulse"></div>
+        <div className="h-1.5 w-1.5 bg-white/40 rounded-full animate-pulse delay-100"></div>
+        <div className="h-1.5 w-1.5 bg-white/40 rounded-full animate-pulse delay-200"></div>
+      </div>
+    </motion.div>
+  );
+}
