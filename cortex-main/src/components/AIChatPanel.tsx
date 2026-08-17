@@ -56,7 +56,8 @@ export default function AIChatPanel({ node }: AIChatPanelProps) {
         .map((ev: EvidenceItem) => `${ev.title} (${ev.source})`)
         .join("; ");
 
-      const response = await fetch("http://127.0.0.1:8000/ask", {
+      const apiUrl = import.meta.env.VITE_API_URL || "http://127.0.0.1:8000";
+      const response = await fetch(`${apiUrl}/ask`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

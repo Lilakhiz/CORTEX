@@ -25,6 +25,7 @@ app = FastAPI()
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
+        "https://cortex-explore.netlify.app",
         "http://10.65.13.107:3000",
         "http://localhost:3000",
         "http://localhost:3001",
