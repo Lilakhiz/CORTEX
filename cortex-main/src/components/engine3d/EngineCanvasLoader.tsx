@@ -242,7 +242,24 @@ export function EngineCanvasLoader({ className = '' }: { className?: string }) {
       });
     }, sectionRef);
 
-    return () => ctx.revert();
+    // The pinned trigger's start/end scroll positions are computed from the
+    // document's layout at the moment this effect runs. If web fonts (or any
+    // other async content above this section) finish loading afterward and
+    // shift the page height — which on a real deployed network takes far
+    // longer than on localhost — ScrollTrigger's cached positions go stale
+    // and scrubbing desyncs from actual scroll, making the pinned animation
+    // look like it's jumping/animating in the wrong direction. Force a
+    // recalculation once fonts have actually settled.
+    const refresh = () => ScrollTrigger.refresh();
+    if (document.fonts?.ready) {
+      document.fonts.ready.then(refresh);
+    }
+    window.addEventListener("load", refresh);
+
+    return () => {
+      ctx.revert();
+      window.removeEventListener("load", refresh);
+    };
   }, [handleProgress, handleStageChange, activeStage]); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (

@@ -494,7 +494,10 @@ function TimelineDriver({
       rollBase.current.value +
       Math.sin(t * 0.23) * 0.0008 +
       Math.sin(t * 0.67 + 1.1) * 0.0004;
-    camera.rotation.z += (targetRoll - camera.rotation.z) * 0.04;
+    // Frame-rate-independent damping (was a flat *0.04 per frame, which
+    // converged at different speeds on different refresh rates/devices).
+    camera.rotation.z +=
+      (targetRoll - camera.rotation.z) * (1 - Math.exp(-2.4 * delta));
 
     lookAtTarget.current.set(
       lookAtBase.current.x + driftX,
